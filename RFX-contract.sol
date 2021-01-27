@@ -1,6 +1,11 @@
 /*
  * Copyright © 2021 rfx.finance. ALL RIGHTS RESERVED.
  */
+ 
+ /*
+ *This product includes software developed by OpenZeppelin, which require their license notice to be preserved. The license applies ONLY to the portion of the code developed by OpenZeppelin.
+ *rfx.finance retains full copyright of all original work, which includes the code contained in RFX.sol.
+ */
 
 pragma solidity ^0.6.2;
 
@@ -22,7 +27,7 @@ contract rfxtoken is Context, IERC20, Ownable {
     address[] private _excluded;
 
     uint256 private constant MAX = ~uint256(0);
-    uint256 private constant _tTotal = 5 * 10**6 * 10**9;
+    uint256 private constant _tTotal = 2.5 * 10**6 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
